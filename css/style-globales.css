@@ -1,0 +1,48 @@
+.text-center{
+    text-align: center;
+    font-size: 2em;
+    padding: 20px;
+    text-shadow: 1px 1px #ff0000;
+    ;
+}
+
+/*precio*/
+.text-right{
+    float: right;
+    background-color: #FFF;
+    color: #000;
+    border-radius:10px ;
+}
+
+.padding15px{
+    padding: 15px;
+}
+
+.porc30{
+float: center;
+}
+
+.a-links{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.content-center{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.margin-left{
+    margin-left: 15px;
+}
+
+.select-option{
+    margin-left: 10px;
+    padding: 15px;
+    width: 100%;
+}
+strong{ 
+    color: #000;
+}
+

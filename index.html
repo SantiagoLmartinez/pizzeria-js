@@ -1,0 +1,264 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizzeria la rica</title>
+    
+    <!-- NavBar style   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS STYLESHEET-->
+    <link rel="stylesheet" href="css/style-globales.css">
+    <link rel="stylesheet" href="css/style-LaRica.css">
+    <link rel="stylesheet" href="css/style-navResponsive.css">
+    
+    <!-- FontAweseme Icon-->
+    <script src="https://kit.fontawesome.com/02f0e13f02.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <span id="index"></span>
+    <!--NavBar-->
+    <nav class="topnav" id="myTopnav">
+        <a href="#inicio" class="active">Inicio <i class="fa fa-home" aria-hidden="true"></i></a>
+        <a href="#menu">Menu <i class="fa fa-book"></i></a>
+        <a href="#LaRica">¿Que es LaRica? <i class="fa fa-envelope"></i></a>
+        <a href="#contacto">Contacto <i class="fa fa-user"></i></a>
+
+        <div class="right-lnk">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+    </nav>
+<!--End NavBar-->
+
+    <header class="header-container">
+         <!--Header-->
+
+        <div class="header">
+            <h1>Pizzeria <br> LaRica</h1>
+            <button class="btn-header "><a href="#menu" class="a-links">Ver Menu</a>
+            </button>
+        </div>
+        <!-- <p>
+            Abierto de 19hs a 2330hs
+        </p> -->
+
+    </header>
+
+<main>
+<!--MAIN-->
+<section class="menu-container">
+    <h2 id="menu" class="text-center">Menu</h2>
+    <article class="menu-FoodDrinks">
+       <div class="food-div" onclick="changeMenuPizza();">Pizzas
+           <!-- <a href="#"  id="menu-pizza-button" class="a-links">Pizza</a> -->
+        </div> 
+        <div class="food-div" onclick="changeMenuEmpanadas();"> Empanadas
+            <!-- <a href="#" id="menu-empanadas-button" class="a-links">Empanadas</a> -->
+        </div>
+        <div class="food-div" onclick="changeMenuBebidas();">Bebidas
+            <!-- <a href="#" id="menu-bebidas-button" class="a-links">Bebidas</a> -->
+        </div>
+    </article>
+    <!--Menu-pizza-->
+    <section id="food-menu-pizza" class="Pizzas-menu content-center"> 
+
+        <article class="padding15px">
+            <h2>Muzzarella <span class="text-right">$400</span> </h2>
+            <p>Muzzarella, Salsa de tomate, Oregano, Aceitunas </p>
+        </article>
+        <article>
+            <h2>Especial <span class="text-right">$450</span></h2>
+            <p>Muzzarella, Jamon, Salsa de tomate, Oregano, Aceitunas</p>
+        </article>
+        <article>
+            <h2>Veggie <span class="text-right">$480</span></h2>
+            <p>Muzzarella de Mani, Salsa de tomate, rucula, Aceitunas</p>
+        </article>
+        <article>
+            <h2>4 Quesos <span class="text-right">$500</span></h2>
+            <p>Muzzarella, Queso azul, Parmesano, Queso rete, Oregano, Aceitunas</p>
+        </article>
+        <article>
+            <h2>Muzzarella5 <span class="text-right">$400</span></h2>
+            <p>Muzzarella, Salsa de tomate, Oregano, Aceitunas</p>
+        </article>
+        <article>
+            <h2>Muzzarella6 <span class="text-right">$400</span></h2>
+            <p>Muzzarella, Salsa de tomate, Oregano, Aceitunas</p>
+        </article>
+    </section>
+
+    <!-- <section id="food-menu-empanadas" class="Pizzas-menu content-center">
+
+        <article class="padding15px">
+            <h2>Empanada-Muzzarella <span class="text-right">$400</span> </h2>
+            <p>Muzzarella, Salsa de tomate, Oregano, Aceitunas </p>
+        </article>
+        <article>
+            <h2>Empanada-Especial <span class="text-right">$450</span></h2>
+            <p>Muzzarella, Jamon, Salsa de tomate, Oregano, Aceitunas</p>
+        </article>
+        <article>
+            <h2>Empanada-Veggie <span class="text-right">$480</span></h2>
+            <p>Muzzarella de Mani, Salsa de tomate, rucula, Aceitunas</p>
+        </article>
+        <article>
+            <h2>Empanada-4 Quesos <span class="text-right">$500</span></h2>
+            <p>Muzzarella, Queso azul, Parmesano, Queso rete, Oregano, Aceitunas</p>
+        </article>
+        <article>
+            <h2>Empanada-Muzzarella5 <span class="text-right">$400</span></h2>
+            <p>Muzzarella, Salsa de tomate, Oregano, Aceitunas</p>
+        </article>
+        <article>
+            <h2>Empanada-Muzzarella6 <span class="text-right">$400</span></h2>
+            <p>Muzzarella, Salsa de tomate, Oregano, Aceitunas</p>
+        </article>
+    </section> -->
+
+    <!-- <section id="food-menu-bebidas" class="Pizzas-menu content-center">
+
+        <article class="padding15px">
+            <h2>Bebida 1<span class="text-right">$400</span> </h2>
+            <p>Muzzarella, Salsa de tomate, Oregano, Aceitunas </p>
+        </article>
+        <article>
+            <h2> Bebida 2<span class="text-right">$450</span></h2>
+            <p>Muzzarella, Jamon, Salsa de tomate, Oregano, Aceitunas</p>
+        </article>
+        <article>
+            <h2> Bebida 3<span class="text-right">$480</span></h2>
+            <p>Muzzarella de Mani, Salsa de tomate, rucula, Aceitunas</p>
+        </article>
+        <article>
+            <h2> Bebida 4<span class="text-right">$500</span></h2>
+            <p>Muzzarella, Queso azul, Parmesano, Queso rete, Oregano, Aceitunas</p>
+        </article>
+        <article>
+            <h2> Bebida 5<span class="text-right">$400</span></h2>
+            <p>Muzzarella, Salsa de tomate, Oregano, Aceitunas</p>
+        </article>
+        <article>
+            <h2> Bebida 6<span class="text-right">$400</span></h2>
+            <p>Muzzarella, Salsa de tomate, Oregano, Aceitunas</p>
+        </article>
+    </section> -->
+    
+
+<!--End section menu container-->
+</section>
+
+ <!--¿QUE ES LA RICA?-->
+<section class="About-LaRica">
+    <article class="content-center">
+        <h2 id="LaRica" class="text-center">¿Que es LaRica?</h2>
+        <p>Pizzeria utilizada de ejemplo practico, al momento no exite, pero si tenes una pizzeria
+            o te gustaria que te haga una pagina web similar a esta, no dudes en solicitarlo </p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fugiat dolore ex, maxime quo molestiae
+            animi quod aliquid, vero ullam cupiditate velit ea. Id doloribus quam atque magni asperiores
+            recusandae.</p>
+        <br>
+
+        <p>Somos Productores y fabricantes de nuestros productos</p>
+
+        <!--foto del local-->
+        <div>
+            <img src="https://resizer.iproimg.com/unsafe/880x/filters:format(webp)/https://assets.iprofesional.com/assets/jpeg/2021/08/522053.jpeg?7.2.12"
+                alt="FotoLocal" width="100%">
+        </div>
+
+        <!--Horarios del local-->
+        <div class="container-horarios">
+            <h2 class="text-center">Horarios de atencion</h2>
+            <section class="container-horarioDeAtencion">
+                <div class="content-izq">
+                    <p >Lunes: <strong>CERRADO</strong></p>
+                    <p >Martes: <strong>19pm - 23pm</strong></p>
+                    <p >Miercoles: <strong>19pm - 23pm</strong></p>
+                </div>
+    
+                <div class="content-der">
+                    <p>Jueves: <strong>19pm - 02am</strong></p>
+                    <p>Viernes: <strong>17pm - 03am</strong></p>
+                    <p>Sabado: <strong>17pm - 05am</strong></p>
+                    <p>Domingo: <strong>17am - 02am</strong></p>
+                </div>
+            </section>
+        </div>
+    </article>
+</section>
+</main>
+<!--End Main container-->
+
+<aside class="contacto-container ">
+    <div class="content-center grid-container-contacto">
+        <h2 id="contacto" class="text-center">Contacto</h2>
+        <p>- Pedidos telefonicos, Delivery sin cargo al <strong>11-123-456</strong>
+
+        </p>
+        <!-- <p>Martes y jueves <strong>2x1</strong>En pizzas de anana</p> -->
+        <p>- Servicio de catering para fiestas</p>
+        <p>- Para <strong>Reservas</strong>, servicio de <strong>Catering</strong> y <strong>Consultas: </strong></p>
+
+        <h3 class="text-center">  completar el formulario.</h3>
+        <div>
+            <label for="name-input">Nombre :</label>
+            <input type="text" id="name-input" placeholder="Nombre" required>
+        </div>
+        
+            <div>
+                <label for="option-form">Tipo de servicio :</label>
+                <br>  
+                <select class="select-option" name="" id="option-form">
+                    <option value="0" selected disabled>Elegir:</option>
+                    <option value="1">Reserva</option>
+                    <option value="2">Catering</option>
+                    <option value="3">Consultas</option>
+                </select>
+                
+                <!-- <fieldset>
+                    <legend>Garantía</legend>
+        
+                    <input type="radio" id="option1" name="option" value="reserva">
+                    <label for="option1">Reserva</label>
+        
+                    <input type="radio" id="option2" name="option" value="catering">
+                    <label for="option2">Catering</label>
+        
+                    <input type="radio" id="option3" name="option" value="consulta">
+                    <label for="option3">Consulta</label>
+        
+                </fieldset> -->
+            </div>
+        <!-- <div>
+            <label class="margin-left" for="cant-person">Numero de personas: </label>
+            <input id="cant-person" type="number" min="0" max="10" placeholder="Cantidad de personas (10 Max)" required>
+        
+        </div> -->
+        <!-- <input type="date" placeholder="01/01/21"> -->
+        <div>
+            <label  for="email-input">Email
+                <input type="email" id="email-input" placeholder="Email: ejemplo@correo.com" required>
+    
+            </label>
+            
+        </div>
+
+        <div>
+            <label for="message-input">Mensaje :</label>
+        <input type="text" id="message-input" placeholder="Mensaje o Peticion Especial">
+        
+        </div>
+        <button class="btn-form" onclick="solicitarReserva();">Solicitar </button>
+    </div>
+</aside>
+
+<footer class="footer">Todos los derechos reservados &copy; <br> <a href="#">Volver al inicio</a></footer>
+
+<script src="js/main.js"></script>
+<!-- End .CONTAINER-->
+</div>
+</body>
+</html>

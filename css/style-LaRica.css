@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;  
+}
+body{
+    /* background-color: rgb(100, 100, 100); */
+    font-family: 'Bebas Neue', cursive;
+    
+
+}
+
+
+/*HEADER*/
+.header-container{
+    /* background-image: url(
+        https://img.freepik.com/vector-gratis/fondo-pizarra-pizza_23-2148907816.jpg?size=626&ext=jpg
+    ); */
+    background-image: url(
+        https://images.pexels.com/photos/162744/tomatoes-tomato-quiche-red-yellow-162744.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+    );
+    height: 100vh;
+}
+
+.header-container p{
+    margin-left: 20px;
+    color: #FFF;    
+    /* background-color: rgba(0, 0, 0, 0.5);     */
+    background-color: #000;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center; 
+    padding-left: 20px;
+    
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    text-align: left;
+    color: purple;
+    height: 85%;
+}
+
+.header h1{
+    text-shadow: 1px 1px 2px rgb(0, 255, 128), 0 0 1em blue, 0 0 0.2em blue;
+    font-size: 3em;
+}
+
+    .btn-header{
+        margin: 10px;
+        padding: 10px;
+        border-radius: 17px;
+        /* background-color: rgba(0, 0, 0, 0.5); */
+        background-color: #000;
+        color: #FFF;
+        width: 150px;
+    }
+    .btn-header:hover{
+        background-color: #ff5959;
+    }
+
+
+    /*....................Menu........................................*/
+
+    main{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1em;
+    }
+
+
+    .menu-container{
+        background-color: #000;
+        color:#FFF;
+        
+    }
+
+    .menu-FoodDrinks{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .food-div{
+        border: 1px solid #FFF;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    
+    .food-div:hover{
+        background-color: #FFF;
+        opacity: 0.3;
+        transition: all 200ms ;
+    }
+    .food-div a:hover{
+        color: #000;
+    }
+
+    
+    .Pizzas-menu article{
+        padding: 15px;
+    }
+
+/*..........about ¿que es la rica?....................*/
+
+.About-LaRica{
+    background-color: peru;
+    color: #FFF;
+}
+
+.img-about-pizzero{
+display: flex;
+flex-direction: row;
+}
+
+.About-LaRica #img-pizzero{
+    width: 100px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+/*.......Horario De Atencion...............*/
+.container-horarioDeAtencion{
+display: flex;
+flex-direction: row;
+}
+.content-izq,
+.content-der{
+    padding: 15px;
+}
+.content-izq{
+    width: 50%;
+}
+.content-der{
+    width: 50%;
+}
+
+
+
+/*...............Contacto..................*/
+.contacto-container{
+    display:  grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    background-color: pink;
+    color: #FFF;
+    padding-bottom:15px ;
+}
+.grid-container-contacto{
+    grid-column: 2/6;
+}
+
+.contacto-container strong{
+    color: #000;
+}
+.contacto-container p{
+    padding: 15px;
+}
+
+.contacto-container input{
+    width: 100%;
+    padding: 15px;
+    margin: 10px;
+}
+
+div>label{
+    padding: 15px;
+
+}
+
+
+.btn-form{
+    float: right;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid
+    
+}
+/*.......................FOOTER.................................*/
+footer{
+    text-align: center;
+    background-color: #000;
+    color: #FFF;
+    bottom: 0;
+}
+.footer a{
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #FaF;
+}
+
+/*MEDIA QUERY*/
+
+@media (max-width: 700px) { 
+    .grid-container-contacto{
+        grid-column: 1/-1;
+    }
+    .container-horarioDeAtencion{
+        flex-direction: column;
+    }
+    .content-der, .content-izq{
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        padding: 0;
+    }
+    }
+
